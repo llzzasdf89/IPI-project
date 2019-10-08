@@ -1,0 +1,19 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./node_modules/typescript/lib/tsc.js ./backend/index.ts --outdir ./backend/complied --esModuleInterop",
+    "start": "node ./node_modules/typescript/lib/tsc.js ./backend/index.ts --outdir ./backend/complied --esModuleInterop \n node ./backend/complied/index.js",
+    "serve": "node node_modules/nodemon/bin/nodemon.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3",
+    "typescript": "^3.6.3"
+  }
+}

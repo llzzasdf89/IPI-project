@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./node_modules/typescript/lib/tsc.js ./backend/index.ts --outdir ./backend/complied --esModuleInterop",
-    "start": "node ./node_modules/typescript/lib/tsc.js ./backend/index.ts --outdir ./backend/complied --esModuleInterop \n node ./backend/complied/index.js",
+    "start": "node ./node_modules/typescript/lib/tsc.js ./backend/index.ts --outdir ./backend/complied --esModuleInterop && node ./backend/complied/index.js",
     "serve": "node node_modules/nodemon/bin/nodemon.js "
   },
   "author": "",
